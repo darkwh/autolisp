@@ -1,4 +1,4 @@
-(defun c:test(/)
+(defun c:cunfa(/)
 	(vl-load-com) 
 	;读取系统变量
 	(setq QAFLAGS (getvar "QAFLAGS"))
@@ -106,7 +106,7 @@
 						ALIST	(entget pel)
 						TT	(cdr (assoc 8 ALIST))
 					)
-					(if (= TT "¥¹¥¿¥åɤf")
+					(if (= TT "�����å�df")
 						(progn
 							(setq temp (acet-geom-intersectwith center_line pel 0)
 								N3 (length temp)
