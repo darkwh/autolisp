@@ -131,13 +131,10 @@
 				)
 			)
 			(print newsort)
-			(setq all_inters (cons inters_list all_inters))
+			(setq all_inters (cons newsort all_inters))
 		)
 		(setq I1 (1+ I1))
 	)
-	(print "all_inters length is")
-	(print (length all_inters))
-	;(print all_inters)
 	all_inters
 )
 
